@@ -1,0 +1,377 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+:root{
+    --blue:#2196F3;
+    --black:#444;
+    --border:.2rem solid var(--blue);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: rgb(21, 19, 19);
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+    line-height: 45px;
+  }
+  
+  .sidenav a:hover {
+    color: #fff;
+  }
+
+
+  /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+  }
+
+  .slide-img {
+    width: 150.9%;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+.main {
+    margin-left: 90px; /* Same width as the sidebar + left position in px */
+  }
+
+  
+section{
+    padding:2rem 9%;
+    width: 100%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+.service-img {
+    height: 200px;
+    width: 220px;
+}
+
+  .services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.services .box-container .box{
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 2.5rem;
+}
+
+.services .box-container .box i{
+    color: var(--green);
+    font-size: 5rem;
+    padding-bottom: .5rem;
+}
+
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.services .box-container .box p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.booking .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+ 
+.booking .row .image{
+    flex:1 1 45rem;
+}
+
+.booking .row .image img{
+    width: 100%;
+}
+
+.booking .row form{
+    flex:1 1 45rem;
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.booking .row form h3{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.booking .row form .box{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;    
+    padding: 1rem;
+}
+
+.booking .row form .btn{
+    padding:1rem 4rem;
+}
+
+select {
+    font-size: 1.6rem;
+    padding-right: 60%;
+}
+
+.review-section {
+  background-color: #2195f38e;
+  height: 80vh;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.img {
+  width: 100px;
+}
+
+.review-section .box-container{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20rem, 2fr));
+  gap:2rem;
+}
+
+.review-section .box-container .box1{
+  border:var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  padding:2.5rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.box1 {
+  height: 57vh;
+}
+
+.text1 {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+}
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #2195f38e;
+  color: white;
+  padding: 15px 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 10px;
+  width: 90px;
+  border-radius: 50px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 17px;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  margin-bottom:10px;
+  margin-left: 45px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.footer {
+    background-color: #000 !important;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.we-services {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right:2rem;
+}
+
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.719);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 10px;}
+    .sidenav a {font-size: 10px;}
+  }
